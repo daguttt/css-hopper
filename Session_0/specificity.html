@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Introduction</title>
+
+</head>
+
+<body>
+    <div id="content">
+        <div class="post">
+            <h2 style="color: green;">This H2 text will be green because attribute style has the highest specificity
+                before !important.</h2>
+        </div>
+        <h2 class="title">This H2 text will also be green, not red, because 'body #content h2' selector has higher
+            specificity than 'h2.title'.</h2>
+    </div>
+    <style>
+        #content .post h2 {
+            color: blue !important;
+        }
+
+        /* Especificidad: 1-0-1-1-1 */
+        #content .post h2 {
+            color: gray;
+        }
+
+        /* Especificidad: 0-0-1-1-1 */
+        body #content h2 {
+            color: green;
+        }
+
+        /* Especificidad: 0-0-1-0-2 */
+        h2.title {
+            color: red;
+        }
+
+        /* Especificidad: 0-0-0-1-1 */
+    </style>
+</body>
+
+</html>

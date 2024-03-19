@@ -1,0 +1,117 @@
+Taller CSS:
+
+Objetivo General: Comprender y aplicar los conceptos básicos de CSS para estilizar elementos HTML específicos.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Seccion 1: Selectores
+
+Objetivo: Comprender y aplicar los distintos tipos de selectores en CSS para estilizar elementos HTML específicos.
+
+Criterios de aceptacion:
+
+- Parte 1: Selectores de Etiqueta
+    * Utilizando tu archivo HTML portfolio.html.
+    * Crea un archivo CSS llamado styles.css
+    * Enlaza el archivo CSS en tu archivo HTML utilizando la etiqueta <link>.
+    * Usa un selector de etiqueta para cambiar el color de texto de todos los párrafos a azul.
+
+- Parte 2: Selectores de Clase
+    * Agrega una clase llamada "highlighted"(destacado) a uno de los párrafos.
+    * Usa un selector de clase en tu CSS para cambiar el color de fondo del párrafo con la clase destacado a amarillo.
+
+- Parte 3: Selectores de ID
+    * Asigna un ID principal a otro párrafo.
+    * Usa un selector de ID para aumentar el tamaño de la fuente del párrafo con el ID principal.
+
+- Parte 4: Selectores de Atributo
+    * Agrega un enlace (<a>) que apunte a https://www.google.com.
+    * Usa un selector de atributo para cambiar el color de todos los enlaces que apunten a https://www.google.com a verde.
+
+- Parte 5: Selectores de Pseudo-clase
+    * En tu barra de navegacion para tu lista no ordenada (<ul>), usa selectores de pseudo-clase para:
+        ** Cambiar el color del primer elemento a rojo.
+        ** Cambiar el color del último elemento a azul.
+        ** Cambiar el color del tercer elemento a verde.
+
+- Parte 6: Selectores de Pseudo-elemento
+    * A cualquier parrafo con texto que tengas usa un selector de pseudo-elemento para:
+        ** Cambiar el color de la primera línea a naranja.
+        ** Cambiar el color de la primera letra a púrpura.
+
+- Parte 7: Pruebas y Experimentación
+    * Abre tu archivo portfolio.html en un navegador y verifica los cambios de estilos.
+    * Experimenta con diferentes valores y propiedades para ver cómo afectan a los elementos seleccionados.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Seccion 2: Modelo de Caja
+
+Objetivo: Comprender y aplicar el modelo de caja en CSS para estilizar elementos HTML específicos.
+
+Criterios de aceptacion:
+
+- Parte 1: Ancho y Alto
+    * Desafío: En tu blog.html.
+    * Tarea: Establecer el ancho y alto de las imágenes y párrafos para crear una apariencia uniforme.
+    * Meta: Lograr que todas las entradas del blog parezcan tarjetas de información.
+
+- Parte 2: Relleno
+    * Desafío: Hacer que el contenido de tus tarjetas de blog sea más legible.
+    * Tarea: Ajustar el relleno dentro de tus tarjetas para que el texto no toque los bordes.
+    * Meta: Conseguir que cada tarjeta de blog tenga espacio respirable alrededor del texto.
+
+- Parte 3: Margen
+    * Desafío: Separar las tarjetas de blog (article) para que no estén pegadas entre sí.
+    * Tarea: Utilizar el margen para añadir espacio entre las tarjetas y otros elementos en la página.
+    * Meta: Lograr que cada tarjeta tenga su propio espacio claramente definido sin tocar otras tarjetas.
+
+- Parte 4: Borde
+    * Desafío: Diferenciar visualmente los enlaces destacados en tu blog.
+    * Tarea: Añadir un borde distintivo a los enlaces que llevan a fuentes externas.
+    * Meta: Resaltar los enlaces externos con un borde que incite a hacer clic.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Seccion 3: Flexbox
+
+Objetivo: Comprender y aplicar Flexbox en CSS para crear diseños de página flexibles y responsivos.
+
+Criterios de aceptacion:
+
+- Parte 1: Flex Container
+    * Desafío: Sobre tu archivo about-us.html darle estilo a tu barra de navegación.
+    * Tarea: Convertir tu barra de navegación en un contenedor flex.
+    * Meta: Lograr que los elementos de la barra de navegación se ajusten automáticamente al ancho de la pantalla 
+
+- Parte 2: Flex Items
+    * Desafío: Sobre tu archivo about-us.html darle estilo a tu barra de navegación.
+    * Tarea: Alinear los elementos de la barra de navegación en el centro.
+    * Meta: Lograr que los elementos de la barra de navegación estén centrados horizontalmente.
+
+- Parte 3: Flex Direction
+    * Desafío: Sobre tu archivo about-us.html darle estilo a tu barra de navegación.
+    * Tarea: Cambiar la dirección de los elementos de la barra de navegación.
+    * Meta: Lograr que los elementos de la barra de navegación estén alineados verticalmente.
+
+- Parte 4: Flex Wrap
+    * Desafío: Sobre tu archivo about-us.html darle estilo a tu barra de navegación.
+    * Tarea: Permitir que los elementos de la barra de navegación se envuelvan en una segunda línea si no caben en la primera.
+    * Meta: Lograr que los elementos de la barra de navegación se ajusten automáticamente al ancho de la pantalla.
+
+- Parte 5: Justify Content
+    * Desafío: Sobre tu archivo about-us.html darle estilo a tu barra de navegación.
+    * Tarea: Alinear los elementos de la barra de navegación en el centro.
+    * Meta: Lograr que los elementos de la barra de navegación estén centrados horizontalmente.
+
+- Parte 6: Align Items
+    * Desafío: Sobre tu archivo about-us.html darle estilo a tu barra de navegación.
+    * Tarea: Alinear los elementos de la barra de navegación en el centro.
+    * Meta: Lograr que los elementos de la barra de navegación estén centrados verticalmente.
+
+- Parte 7: Align Content
+    * Desafío: Sobre tu archivo about-us.html darle estilo a tu barra de navegación.
+    * Tarea: Alinear los elementos de la barra de navegación en el centro.
+    * Meta: Lograr que los elementos de la barra de navegación estén centrados verticalmente.
+
+Resultado esperado: Tu barra de navegacion debe estar alineada vertical y horizontalmente. Ademas, debe ajustarse automaticamente al ancho de la pantalla. Deben estar separados por un espacio uniforme(margin). 
