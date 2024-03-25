@@ -23,7 +23,7 @@ body {
 
 .services {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   gap: 10px;
 }
 
@@ -34,7 +34,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .card {
-    flex: 0 0 calc((100% - 30px) / 4); /* flex-shrink, flex-grow, flex-basis */
+    flex: 0 0 calc((100% - 30px) / 4); /*  flex-grow, flex-shrink, flex-basis */
   }
 }
 
@@ -50,8 +50,15 @@ body {
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
   .card {
     flex: 0 0 100%;
   }
+}
+
+.display-flex{
+  display: flex;
+}
+.position-fixed{
+  position: fixed;
 }
