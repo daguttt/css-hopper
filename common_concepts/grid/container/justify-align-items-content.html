@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            margin: 0;
+        }
+
+        div.container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px;
+            justify-items: end;
+            /*align-items: center; */
+            /* justify-content: center; */
+            /* align-content: center; */
+            height: 500px;
+            background-color: #f0f0f0;
+        }
+
+        div {
+            background-color: red;
+            border: 1px solid #ccc;
+            text-align: start;
+            line-height: 100%;
+        }
+
+        /* Pseudo-class */
+        div.container > div:nth-child(1) {
+            background-color: #f1c40f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="">1</div>
+        <div class="">2</div>
+        <div class="">3</div>
+        <div class="">4</div>
+        <div class="">5</div>
+        <div class="">6</div>
+        <div class="">7</div>
+        <div class="">8</div>
+        <div class="">9</div>
+    </div>
+</body>
+</html>
+
+<!-- justify-items: baseline; -->
+
+<!-- Como funciona baseline?
+
+    - Si el tamaño de la caja es menor que el tamaño del grid, la caja se alinea en la línea base.
+    - Si el tamaño de la caja es mayor que el tamaño del grid, la caja se alinea en la línea base.
+    - Si el tamaño de la caja es igual al tamaño del grid, la caja se alinea en la línea base.
+-->

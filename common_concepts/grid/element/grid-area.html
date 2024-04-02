@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        main {
+            height: 100vh;
+            display: grid;
+            gap: 12px;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 500px auto 1fr;
+        }
+
+        main>section {
+            border: 1px solid black;
+        }
+
+        main>section:first-child {
+            grid-area: 1 / 1 / 3 / 2;
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            font-size: 24px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        main>section:nth-child(2) {
+            grid-area: 1 / 2 / 2 / 4;
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px;
+            font-size: 24px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>section 1</section>
+        <section>section 2</section>
+        <section>section 3</section>
+        <section>section 4</section>
+        <section>section 5</section>
+        <section>section 6</section>
+        <section>section 7</section>
+        <section>section 8</section>
+    </main>
+</body>
+
+</html>

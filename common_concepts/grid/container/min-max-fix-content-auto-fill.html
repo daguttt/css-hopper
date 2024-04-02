@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 12px;
+            /* grid-template-columns: min-content max-content fit-content(300px) auto 1fr; */
+            grid-template-columns: minmax(300px, 400px) minmax(150px, 1fr) minmax(75px, 1fr) minmax(50px, 1fr) minmax(25px, 1fr);
+            /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+            /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+        }
+
+        .grid-container>div {
+            background-color: #f1c40f;
+            border: 1px solid #f39c12;
+        }
+
+        .grid-container>div>img {
+            width: 150px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item min-content">Min-Content: Soy un texto bastante largo que debería mostrarse compactamente.
+        </div>
+        <div class="grid-item max-content">Max-Content: Soy un texto que se expande tanto como sea posible.</div>
+        <div class="grid-item">Fit-Content: Me ajusto al contenido, pero dentro de los límites de la cuadrícula.</div>
+        <div class="grid-item">auto: Yo me acomodo al tamaño del texto</div>
+        <div class="grid-item">fr: Yo soy una fraccion entera del contenido restante</div>
+    </div>
+</body>
+
+</html>
+
+<!-- Consideraciones de uso -->
+<!-- 
+
+    Reglas sobre min-max
+        - minmax(min, max): Establece un tamaño mínimo y máximo para una caja.
+            Pero, hay ciertas consideraciones y tips que debes tener en cuenta:
+            - Si hay otras columnas con minmax() y el tamaño de la cuadrícula es menor que el tamaño 
+            mínimo de la columna, la columna se ajustará al tamaño mínimo, pero en un orden de menor a mayor. O sea,
+            si hay una columna con minmax(300px, 1fr) y otra con minmax(200px, 1fr), la primera columna se ajustará
+            al tamaño mínimo de 300px y la segunda columna se ajustará al tamaño mínimo de 200px. Pero primero se ajustará
+            la segunda columna y luego la primera columna.
+ -->
+<!-- 
+    - min-content: El tamaño mínimo necesario para contener el contenido de la caja.
+        Pero, que da ese contenido? 
+        - Si el contenido es texto, el tamaño mínimo necesario para contener el texto.
+        - Si el contenido es una imagen, el tamaño mínimo necesario para contener la imagen.
+        - Si el contenido es un elemento de bloque, el tamaño mínimo necesario para contener el elemento de bloque.
+    - max-content: El tamaño máximo necesario para contener el contenido de la caja.
+        Pero, que da ese contenido?
+        - Si el contenido es texto, el tamaño máximo necesario para contener el texto.
+        - Si el contenido es una imagen, el tamaño máximo necesario para contener la imagen.
+        - Si el contenido es un elemento de bloque, el tamaño máximo necesario para contener el elemento de bloque.
+    - fit-content(): El tamaño necesario para contener el contenido de la caja, pero no más grande que el tamaño especificado.
+        Como funciona esto?
+        - Si el tamaño del contenido es menor que el tamaño especificado, el tamaño de la caja 
+        será igual al tamaño del contenido.
+        - Si el tamaño del contenido es mayor que el tamaño especificado, el tamaño de la caja
+-->

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        section.my-container>.my-container__content,
+        section.my-container>.my-container__second_content {
+            display: grid;
+            grid-template-columns: minmax(100px, auto) 15% auto 80px 100px;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        section.my-container>div.my-container__content>div,
+        section.my-container>div.my-container__second_content>div {
+            background-color: #ea8080;
+            text-align: center;
+        }
+
+        section.my-container>div.my-container__content>div img,
+        section.my-container>div.my-container__second_content>div img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="my-container">
+            <div class="container my-container__content">
+                <div class=""><img src="../../../holy_week/shopping/assets/images/products/collection-1_large.webp"
+                        alt=""></div>
+                <div class=""><img src="../../../holy_week/shopping/assets/images/products/collection-2_large.webp"
+                        alt=""></div>
+                <div class=""><img src="../../../holy_week/shopping/assets/images/products/collection-4_large.webp"
+                        alt=""></div>
+                <div class=""><img src="../../../holy_week/shopping/assets/images/products/collection-3_large.webp"
+                        alt=""></div>
+                <div class=""><img src="../../../holy_week/shopping/assets/images/products/collection-4_large.webp"
+                        alt=""></div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

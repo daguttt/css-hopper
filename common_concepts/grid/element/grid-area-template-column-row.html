@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .my-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: min(100px, auto) 1fr 1fr;
+            height: 100vh;
+        }
+
+        .my-container div {
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        div.my-container div:nth-child(odd) {
+            background-color: violet;
+        }
+
+        div.my-container div:nth-child(1) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        div.my-container div > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        div.my-container div{
+            background: url(../../../Session_4/assets/images/gallery-1.avif);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        div.my-container div:nth-child(2) {
+            /* grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+            grid-area: 1 / 3 / 3 / 4; /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+        }
+        div.my-container div:last-child {
+            /* grid-column-start: 2;
+            grid-column-end: 4; */
+            /* grid-column: 2 / 4; */
+            /* grid-row-start: 3;
+            grid-row-end: 4; */
+            /* grid-row: 3 / 4; */
+            grid-area: 3 / 2 / 4 / 4;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="my-container">
+                <!-- <div><img src="../../../Session_4/assets/images/gallery-1.avif" alt=""></div>
+                <div><img src="../../../Session_4/assets/images/gallery-1.avif" alt=""></div>
+                <div><img src="../../../Session_4/assets/images/gallery-1.avif" alt=""></div>
+                <div><img src="../../../Session_4/assets/images/gallery-1.avif" alt=""></div>
+                <div><img src="../../../Session_4/assets/images/gallery-1.avif" alt=""></div>
+                <div><img src="../../../Session_4/assets/images/gallery-1.avif" alt=""></div> -->
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

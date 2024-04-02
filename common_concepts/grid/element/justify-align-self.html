@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Align self</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .grid-container {
+            height: 100vh;
+            padding: 8px;
+            gap: 12px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            background-color: red;
+        }
+
+        .grid-item {
+            background-color: #f1c40f;
+            color: white;
+            padding: 12px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .grid-item:nth-child(1) {
+            justify-self: start;
+            align-self: end;
+        }
+    </style>
+</head>
+<body>
+    <main class="grid-container">
+        <section class="grid-item">section 1</section>
+        <section class="grid-item">section 2</section>
+        <section class="grid-item">section 3</section>
+        <section class="grid-item">section 4</section>
+        <section class="grid-item">section 5</section>
+        <section class="grid-item">section 6</section>
+    </main>
+</body>
+</html>

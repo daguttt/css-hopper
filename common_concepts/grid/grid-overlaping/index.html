@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .my-awesome-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            height: 100vh;
+        }
+
+        .my-awesome-gallery div {
+            background-color: #f1c40f;
+            padding: 2px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .my-awesome-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.4s;
+            display: block;
+        }
+
+        .my-awesome-gallery div:hover img {
+            object-position: bottom;
+        }
+
+        .my-awesome-gallery div:nth-child(1) {
+            grid-column: 1 / 2;
+            grid-row: span 2;
+            position: relative;
+        }
+
+        .my-awesome-gallery div:nth-child(1) img {
+            height: 100%;
+        }
+
+        .my-awesome-gallery div:nth-child(1):hover img {
+            object-position: left;
+            filter: blur(3px);
+        }
+
+        .my-awesome-gallery div:nth-child(1):hover h3 {
+            transition: all 0.5s;
+            display: block;
+        }
+
+        .my-awesome-gallery div:nth-child(1)>h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.4rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+
+        /* image change effect */
+        .my-awesome-gallery div:nth-child(2),
+        .my-awesome-gallery div:nth-child(3) {
+            grid-column: 3 / 5;
+            grid-row: 1 / 2;
+            z-index: 15;
+            transition: opacity 0.4s;
+        }
+
+        .my-awesome-gallery div:nth-child(3):hover {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-awesome-gallery">
+        <div class="">
+            <img src="../../../holy_week/shopping/assets/images/products/collection-1_large.webp" alt="">
+            <h3>Product Start up to 50%</h3>
+        </div>
+        <div class=""><img src="../../../holy_week/shopping/assets/images/products/collection-2_large.webp" alt="">
+        </div>
+        <div class=""><img src="../../../holy_week/shopping/assets/images/products/collection-3_large.webp" alt="">
+        </div>
+        <div class=""><img src="../../../holy_week/shopping/assets/images/products/collection-4_large.webp" alt="">
+        </div>
+        <div class=""><img src="../../../holy_week/shopping/assets/images/products/collection-1_large.webp" alt="">
+        </div>
+        <div class=""><img src="../../../holy_week/shopping/assets/images/products/collection-2_large.webp" alt="">
+        </div>
+        <div class=""><img src="../../../holy_week/shopping/assets/images/products/collection-3_large.webp" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

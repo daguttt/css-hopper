@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template area</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            height: 100vh;
+            display: grid;
+            gap: 12px;
+            grid-template-areas:
+                "section1 section1 section2"
+                "section3 section4 section5"
+                "section3 section6 section6";
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 500px auto 300px;
+        }
+
+        .grid-item {
+            background-color: #f1c40f;
+            color: white;
+            padding: 12px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .grid-item:nth-child(1) {
+            grid-area: section1;
+        }
+
+        .grid-item:nth-child(2) {
+            grid-area: section2;
+        }
+
+        .grid-item:nth-child(3) {
+            grid-area: section3;
+        }
+
+        .grid-item:nth-child(4) {
+            grid-area: section4;
+        }
+
+        .grid-item:nth-child(5) {
+            grid-area: section5;
+        }
+
+        .grid-item:nth-child(6) {
+            grid-area: section6;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum odit repellendus temporibus qui assumenda, pariatur deserunt officiis eos hic omnis est nam dolores eaque excepturi nostrum repudiandae placeat nobis! Soluta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste voluptates sunt molestias architecto aperiam est itaque in aliquid voluptatem ipsum esse vel delectus nihil velit officia, ex, hic minima ratione. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, exercitationem eveniet doloremque tempore error, facere id dolorum tenetur non ex enim perspiciatis aspernatur officiis, aliquam dolor maiores quidem ipsam. Obcaecati.</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+</html>

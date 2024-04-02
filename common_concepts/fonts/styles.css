@@ -1,0 +1,33 @@
+/* Default styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--mainFont);
+  margin: 0;
+}
+
+:root {
+  /* Fuentes */
+  --mainFont: PEPITO, sans-serif;
+  /* Colores */
+  --mainColor: #471754;
+  /* Box Shadow */
+  --mainColor2: 
+  /* Espaciado */
+}
+
+@font-face {
+  font-family: PEPITO;
+  src: url("assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
